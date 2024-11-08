@@ -1,0 +1,5 @@
+document.querySelector('input[type="text"]').addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    // هنا يمكن إضافة منطق البحث عن الدورات أو المشاريع
+    // مثل تصفية قائمة الدورات بناءً على الاستعلام
+});
