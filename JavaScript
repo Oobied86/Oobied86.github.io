@@ -1,5 +1,12 @@
-document.querySelector('input[type="text"]').addEventListener('input', function() {
-    const query = this.value.toLowerCase();
-    // هنا يمكن إضافة منطق البحث عن الدورات أو المشاريع
-    // مثل تصفية قائمة الدورات بناءً على الاستعلام
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var errorMessage = document.getElementById('error-message');
+
+    if (username === '' || password === '') {
+        event.preventDefault();
+        errorMessage.style.display = 'block';
+    } else {
+        errorMessage.style.display = 'none';
+    }
 });
