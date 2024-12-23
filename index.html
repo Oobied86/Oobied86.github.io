@@ -1,44 +1,21 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="منصة تعليمية لتقديم الدروس الخصوصية، حل الواجبات، والمشاريع الجامعية.">
-    <title>منصة التعليم المتميز</title>
+    <title>Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>مرحبًا بكم في منصة التعليم المتميز</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#courses">الدورات</a></li>
-                <li><a href="#about">عن المنصة</a></li>
-                <li><a href="#contact">اتصل بنا</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <h2>اكتشف المهارات الجديدة</h2>
-        <p>نحن نقدم أفضل الحلول الأكاديمية من دورات تعليمية ومشاريع جامعية.</p>
-        <input type="text" placeholder="ابحث عن دورة، واجب، مشروع...">
-    </section>
-
-    <section id="courses">
-        <h2>الدورات المتاحة</h2>
-        <div class="course">
-            <h3>دورة البرمجة بلغة JavaScript</h3>
-            <p>تعلم البرمجة بلغة JavaScript من الصفر إلى الاحتراف.</p>
-        </div>
-        <!-- المزيد من الدورات -->
-    </section>
-
-    <footer>
-        <p>© 2024 منصة التعليم المتميز. جميع الحقوق محفوظة.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="http://your-server.com/submit" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
 </body>
 </html>
