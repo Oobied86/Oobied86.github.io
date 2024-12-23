@@ -9,13 +9,15 @@
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="http://your-server.com/submit" method="post">
+        <form id="loginForm" action="submit.php" method="post">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required><br><br>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required><br><br>
             <input type="submit" value="Login">
+            <p id="error-message" style="color: red; display: none;">Please fill in all fields.</p>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
